@@ -1,0 +1,48 @@
+# chess_position_printer
+
+A small Pillow-based helper that turns lists of FEN strings into PNG diagrams.
+
+<img width="600" height="600" alt="position_queens-gambit" src="https://github.com/user-attachments/assets/262d9dba-e777-4e1f-a515-1a86eb1761be" />
+example: queen's gamit
+
+## Requirements
+
+- Python 3.9 or newer.
+- [Pillow](https://python-pillow.org/) (`pip install pillow`).
+
+## Preparing your inputs
+
+1. Add one position per line inside `chess_board_printer.txt` using the format:
+   ```
+   <FEN string> -> <diagram name>;
+   ```
+   Lines starting with `#` are ignored so you can keep notes in the same file.
+2. Keep your piece icons (1000×1000 PNGs work well) inside the `pieces/` folder.
+   The filenames must match the defaults listed in `print_positions.py`.
+
+## Generating diagrams
+
+Run the script from the project root:
+
+```bash
+python print_positions.py
+```
+
+Each valid entry creates `position_<diagram name>.png` in the same directory.
+
+## Tweaking the output
+
+All tunable values live at the top of `print_positions.py` and can be edited in place:
+
+- `SQUARE_SIZE` controls the resolution of every board square (default 500px, resulting in 4000×4000 output).
+- `INCLUDE_BOARD` toggles between a coloured board and a transparent background
+  (set it to `False` for transparent output).
+- `LIGHT_SQUARE_COLOR` and `DARK_SQUARE_COLOR` define the board palette.
+- `OUTPUT_NAME_TEMPLATE` lets you change the naming scheme of the generated PNGs.
+
+## Swapping piece sets
+
+To use different artwork, replace the PNGs inside the `pieces/` folder with your
+own files—keep the filenames identical so the FEN lookup table continues to work.
+You can create sub-folders with alternative sets; just point `PIECES_FOLDER` to
+the desired directory before running the script.

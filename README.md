@@ -2,7 +2,7 @@
 
 A small Pillow-based helper that turns lists of FEN strings into PNG diagrams.
 
-<img width="4000" height="4000" alt="position_queens-gambit-2" src="https://github.com/user-attachments/assets/d873df2c-31f7-4fff-a40f-59af1ae0537d" />
+<img width="500" height="500" alt="position_queens-gambit-2" src="https://github.com/user-attachments/assets/d873df2c-31f7-4fff-a40f-59af1ae0537d" />
 
 example: queen's gamit
 

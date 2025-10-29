@@ -5,6 +5,15 @@ A small Pillow-based helper that turns lists of FEN strings into PNG diagrams.
 <img width="600" height="600" alt="position_queens-gambit" src="https://github.com/user-attachments/assets/262d9dba-e777-4e1f-a515-1a86eb1761be" />
 example: queen's gamit
 
+### ♟️ About This Project
+
+This Python script uses the **Pillow** library to generate **custom chess board diagrams** as PNG images.  
+It allows you to visualize and print chess positions from FEN strings, design unique piece styles, and export diagrams for use in books, websites, or training materials.  
+The script is lightweight, open-source, and perfect for **developers, chess teachers, and enthusiasts** who want to automate or personalize chess illustrations with clean, printable output.
+
+**Tags:** `#chess #python #pillow #diagram-generator #chessboard #chess-diagram #image-generator #open-source #fen #board-visualizer`
+
+
 ## Requirements
 
 - Python 3.9 or newer.

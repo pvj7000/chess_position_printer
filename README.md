@@ -18,7 +18,7 @@ The script is lightweight, open-source, and perfect for **developers, chess teac
 ## Requirements
 
 - Python 3.9 or newer.
-- [Pillow](https://python-pillow.org/) (`pip install pillow`).
+- [Pillow](https://pypi.org/project/pillow/) (`pip install pillow`).
 
 ## Preparing your inputs
 
